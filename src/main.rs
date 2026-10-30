@@ -46,7 +46,7 @@ struct Args {
 fn run(a: Args) -> io::Result<()> {
     let t = Instant::now();
     let records = input::read_records(&a.path_pos)?;
-    eprintln!("Loaded {} path_pos records", records.len());
+    eprintln!("Loaded {} path_pos records ({} bytes)", records.len(), records.len() * 16);
     eprintln!("PHASE_TIMING records_load_s: {:.6}", t.elapsed().as_secs_f64());
     let starts = input::read_starts(&a.seq_id_starts)?;
     let names = input::read_path_names(&a.path_names)?;
