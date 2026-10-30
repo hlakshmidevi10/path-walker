@@ -14,9 +14,9 @@ cargo build --release   # target/release/path-walker
 ## Usage
 
 ```bash
-path-walker --gfa graph.gfa --path-pos mems_path_pos_v2.bin \
-            --seq-id-starts mems_seq_id_starts.out --path-names graph.paths \
-            --dedup-read-node --coverage-prefix alignment
+path-walker --gfa graph.gfa --path-pos mem_path_pos_v2.bin \
+            --seq-id-starts mem_seq_id_starts.out --path-names graph.paths \
+            --dedup-read-node --coverage-prefix mem      # writes mem_coverage.csv
 ```
 
 | Option | |
